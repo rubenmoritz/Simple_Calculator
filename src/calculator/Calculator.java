@@ -40,7 +40,7 @@ public class Calculator {
         String output = "incorrect input";
         LibCalculator libCalc = new LibCalculator();
 
-        if (!input.matches("(\\d+)([\\+\\-\\*\\\\/\\%])(\\d+)")) {
+        if (!input.matches("(\\d+)(\\s?)([\\+\\-\\*\\\\/\\%])(\\s?)(\\d+)")) {
             output = "incorrect input";
             printHelp();
         } else if (input.contains("+")) {
